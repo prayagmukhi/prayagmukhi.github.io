@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>The Anxiety of being 21 - eBook</title>
+    <title>Ebook App Template :: Pixeden</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/libs/prism/prism.css">
@@ -26,6 +26,13 @@
       </filter>
     </svg>
     
+    <nav class="navbar ebook-nav">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#thebook" class="text-medium"> <span>THE BOOK</span><i class="pe-mi-bookmark-3"></i></a></li>
+        <li role="presentation"><a href="#features" class="text-medium"> <span>FEATURES</span><i class="pe-mi-love"></i></a></li>
+        <li role="presentation"><a href="#author" class="text-medium"> <span>THE AUTHOR</span><i class="pe-mi-pencil-1"></i></a></li>
+      </ul>
+    </nav>
     <section data-bg-src="assets/img/bg_1.jpg" data-bg-blend="multiply" data-bg-color="#28292d" id="thebook" class="section section-background x2 section-dark pb-30 pt-30">
       <svg class="svg-misc hero-misc-1">
         <use xlink:href="assets/img/symbols.svg#misc-2"></use>
@@ -42,6 +49,9 @@
                 <body xmlns="http://www.w3.org/1999/xhtml">
                   <div class="svg-foreign-ipad">
                     <img src="assets/img/cover.jpg" style="width:329px;height:525px;">
+                    <svg viewBox="0 0 737.2 82.9" class="svg-icons color-comet">
+                      <use xlink:href="assets/img/symbols.svg#s-icons"></use>
+                    </svg>
                   </div>
                 </body>
               </foreignObject>
@@ -52,15 +62,11 @@
             <p class="hero-by">by Prayag Mukhi</p>
             
             <p class="hero-text fz-21">The Problems, Reasons and Solutions.</p>
-
             <button class="btn btn-white hero-btn">Buy on Amazon</button>
-
             <h4 class="hero-price"> <span class="text-thin fz-39"> ₹</span><span class="text-medium fz-56 price-number">49<sup class="text-book fz-27"></sup></span><sup class="text-uppercase">Digital <span class="text-normalcase">e</span>Book</sup></h4>
             <script type="text/javascript" src="//static.mailerlite.com/data/webforms/355141/v8m0z6.js?v2"></script>
           </div>
-
         </div>
-
         
       </div>
     </section>
@@ -76,7 +82,7 @@
                 Aenean quis dapibus nisi, ut mattis ligula. Nunc dapibus tortor pharetra mi auctor laoreet. 
                 Donec lobortis lacinia purus eu fringilla.
               </p>
-             
+              
               
             </div>
           </div>
@@ -84,7 +90,6 @@
         </div>
       </div>
     </section>
-
     <section id="author" class="section">
       <div class="container">
         <div class="row">
@@ -107,9 +112,6 @@
       </div>
     </section>
     
-        
-   
-   
     <script>
       var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
       peLoader.init({
