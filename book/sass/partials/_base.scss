@@ -1,0 +1,14 @@
+@import "modules/all";
+
+html { 
+  font-size:1em;
+  line-height:1.5;
+}
+
+body {
+	background-color: white;
+	// color: white;
+  font-family: $base-ff;
+	font-size: $intial-fz; 
+  line-height: 1.66;
+}

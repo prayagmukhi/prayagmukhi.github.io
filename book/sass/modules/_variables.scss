@@ -1,0 +1,58 @@
+// Color variables
+$regent-blue: #a0d7e3;
+$dark: #1e2124;
+$light-grey: #8f8f8f;
+$light: #ebeef4;
+$ebony-clay: #313549; //dark-blue
+$sinbad: #a5d8c4; // green
+$mandy: #e04863; // red
+$tacao: #ecc28b;
+$comet: #5F668A;
+
+$dark-grey: #3a3a3a;
+
+// Colors list
+$colors: 
+  "regent-blue" $regent-blue,
+  "dark" $dark,
+  "light" $light,
+  "light-grey" $light-grey,
+  "ebony-clay" $ebony-clay,
+  "sinbad" $sinbad,
+  "mandy" $mandy,
+  "tacao" $tacao,
+  "comet" $comet,
+  "white" white;
+
+// Bootstrap buttons colors list
+$bs-btns: 
+    "default" #fff,
+    "primary" #337ab7,
+    "success" #5cb85c,
+    "info" #5bc0de,
+    "warning" #f0ad4e,
+    "danger" #d9534f;
+
+
+// Create a new list based on $colors for Components
+
+$color-list:();
+$color-list: join($colors, $bs-btns, comma);
+
+// @for $i from 1 through length($colors) {
+  // $color-list: append($color-list, '.btn-' + nth(nth($colors,$i),1) );
+// }
+
+
+// Text Variables
+$intial-fz: 18px;
+$base-ff: 'Gotham-Book';
+
+
+
+// Control variables
+$slideResp: true;
+
+
+
+

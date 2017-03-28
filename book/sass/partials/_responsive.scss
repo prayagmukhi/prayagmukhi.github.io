@@ -1,0 +1,249 @@
+
+@media (max-width: 1200px) {
+  
+  .hero-copy { padding-top: 0; }
+
+}
+
+
+@media only screen and (max-width : 995px) {
+  
+  .section.pt-130 { padding-top: 70px; }
+
+  .hero-price > sup { 
+    display: inline-block;
+    top: 0;
+    margin-left: 1.75em;
+  }
+
+  .brand-icon svg { height: 80px; }
+
+  #foripad { 
+    .mt-57 { margin-top: 0; }
+  }
+
+  .quotes-navigation {
+    bottom: -50px;
+    right: auto;
+    left: 0;
+    // transform: translateX(50%);
+  }
+
+
+}
+
+
+
+@media only screen and (max-width : 768px) {
+
+  .svg-ipad-hero { width: 50%; }
+  .hero-copy { padding-top: 30px; }
+
+  #foripad { 
+    text-align: center;
+    .mt-57 { margin-top: 25px; }
+    .pl-75 { padding-left: 15px;}
+    svg { 
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  .ebook-features { margin-bottom: 30px; }
+
+  .ebook-pricing-cols [class^="col-"]:not(:last-of-type) {
+    border-right: none;
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .ebook-pricing-cols .mt-100 { margin-top: 10px;  }
+
+}
+
+
+@media (max-width: 480px) {
+  
+  .navbar {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transform: translateX(0);
+    text-align: center;
+    overflow: visible !important;
+
+    &.nav-show { transform: translateY(0);  }
+    &.nav-hide { transform: translateY(100%); }
+
+    &:after { 
+      width: 100%;
+      background-color: rgba(#26272b,.85);
+    }
+    li { width: auto; }
+    li a span { 
+      // display: none; 
+      position: absolute;
+      top: -2em;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background: $regent-blue;
+      font-size: 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(2em);
+      opacity: 0;
+      transition: .3s;
+    }
+
+    li a:hover span, &.nav-show li.active a span {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+  .nav-pills > li, .nav-pills > li + li {
+    float: none;
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-bottom: 1px;
+  }
+  .navbar li:not(:last-child):after {
+    display: none;
+  }
+  .nav-pills > li.active > a:after, .nav-pills > li.active > a:before, .nav-pills > li.active > a:hover:after, .nav-pills > li.active > a:hover:before, .nav-pills > li.active > a:focus:after, .nav-pills > li.active > a:focus:before { display: none;}
+  
+  .nav-btn { display: none; }
+  
+  .nav-pills { 
+    display: table; 
+    width: 100%; 
+    border-collapse: separate;
+    border-spacing: 1px 0;
+    & > li, & > li + li { 
+      display: table-cell;
+      a { 
+        &[href="#foripad"] { padding: 18px 3px; }
+        text-align: center; 
+        i { width: auto; }
+      }
+    }
+  }
+
+
+
+  #footer { padding-bottom: 150px; }
+
+  #books-slider .pe-slides li { width: 320px; }
+  .sldier-nav { top: 390px; }
+
+  .ebook-quote { 
+    font-size: 24px; 
+    footer { 
+      padding-left: 118px; 
+      &:before { width: 100px; }
+    }
+  }
+  
+  .brand-icon { margin-right: 0; }
+
+  #foripad .pl-52 { padding-left: 15px; }
+  .ebook-features .media-left { display: inline-block; }
+
+  .hero-unit h1, .hero-unit .h1 { font-size: 76px; }
+
+}
+
+@media screen and ( max-height: 590px ){
+  .navbar { top: 86px; }
+  .nav-btn { top: 0; }
+}
+
+@media ( max-height: 590px ) and (max-width: 480px) {
+  .navbar { top: auto; }
+}
+
+@media ( max-height: 515px ) {
+  .navbar {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transform: translate3d(0, 0px, 0px);
+    text-align: center;
+
+    overflow: visible!important; //
+
+    &.nav-show { transform: translate3d(0, 0, 0px);  }
+    &.nav-hide { transform: translate3d(0, 100%, 0px); }
+
+    &:after { 
+      width: 100%;
+      background-color: rgba(#26272b,.85);
+    }
+    li { width: auto; }
+
+    li a span { 
+      // display: none; 
+      position: absolute;
+      top: -2em;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background: $regent-blue;
+      font-size: 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(2em);
+      opacity: 0;
+      transition: .3s;
+    }
+
+    li a:hover span, &.nav-show li.active a span {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+  .nav-pills > li, .nav-pills > li + li {
+    float: none;
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-bottom: 1px;
+  }
+  .navbar li:not(:last-child):after {
+    display: none;
+  }
+  .nav-pills > li.active > a:after, .nav-pills > li.active > a:before, .nav-pills > li.active > a:hover:after, .nav-pills > li.active > a:hover:before, .nav-pills > li.active > a:focus:after, .nav-pills > li.active > a:focus:before { display: none;}
+  
+  .nav-btn { display: none; }
+
+  .nav-pills { 
+    display: table; 
+    width: 100%; 
+    border-collapse: separate;
+    border-spacing: 1px 0;
+    & > li, & > li + li { 
+      display: table-cell;
+      a { 
+        &[href="#foripad"] { padding: 18px 4px; }
+        text-align: center; 
+        i { width: auto; }
+      }
+    }
+  }
+
+}
